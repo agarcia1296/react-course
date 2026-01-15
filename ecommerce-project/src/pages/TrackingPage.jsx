@@ -1,9 +1,8 @@
-import './header.css';
+import '../components/header.css';
 import './TrackingPage.css';
 
 export function TrackingPage() {
     return (
-        <>
         <body>
         <div className="header">
           <div className="left-section">
@@ -75,6 +74,5 @@ export function TrackingPage() {
           </div>
         </div>
       </body>
-      </>
     )
 }
