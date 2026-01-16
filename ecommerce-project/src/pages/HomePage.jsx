@@ -1,24 +1,23 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Header } from "../components/Header";
+import { formatMoney } from "../utils/money.js";
 import "./HomePage.css";
 
-export function HomePage({cart}) {
+export function HomePage({ cart }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     axios.get("/api/products").then((response) => {
       setProducts(response.data);
     });
-
-
   }, []);
 
   return (
     <>
       <title>Ecommerce Project</title>
       <link rel="icon" type="image/svg+xml" href="home-favicon.png" />
-      <Header cart={cart} />∏
+      <Header cart={cart} />
       <div className="home-page">
         <div className="products-grid">
           {products.map((product) => {
@@ -45,7 +44,7 @@ export function HomePage({cart}) {
                 </div>
 
                 <div className="product-price">
-                  ${(product.priceCents / 100).toFixed(2)}
+                  {formatMoney(product.priceCents)}
                 </div>
 
                 <div className="product-quantity-container">
