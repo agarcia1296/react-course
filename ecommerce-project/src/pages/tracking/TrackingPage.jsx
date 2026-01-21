@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import "../components/header.css";
+import "../../components/header.css";
 import "./TrackingPage.css";
 
 export function TrackingPage() {
