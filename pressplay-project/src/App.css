@@ -1,0 +1,12 @@
+:root {
+  /* Colors */
+  --color-bg: #121212;
+  --color-surface: #1e1e1e;
+  --color-text-primary: #f5f1e8;
+  --color-text-secondary: #b3b3b3;
+  --color-accent: #d96c2c;
+
+  /* Fonts */
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Merriweather", serif;
+}
