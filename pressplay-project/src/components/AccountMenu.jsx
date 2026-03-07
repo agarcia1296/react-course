@@ -12,7 +12,7 @@ export function AccountMenu({ onClose }) {
 
           <ul>
             <li>
-              <NavLink to="/">Account</NavLink>
+              <NavLink to="/login">Account</NavLink>
             </li>
             <li>
               <NavLink to="/orders">Orders</NavLink>

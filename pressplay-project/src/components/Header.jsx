@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
 import { NavLink } from "react-router";
-import "./Header.css";
 import { AccountMenu } from "./AccountMenu";
 import { useClickOutside } from "../utils/useClickOutside";
+import "./Header.css";
 
 export function Header({ cart }) {
   const [open, setOpen] = useState(false);

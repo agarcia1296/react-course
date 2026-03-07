@@ -1,0 +1,33 @@
+.homebutton-link {
+  display: inline-block;
+  padding: 6px 9.5px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.homebutton-link:hover {
+  border: 1px solid white;
+}
+
+.logo {
+  height: 36px;
+  margin-top: 1px;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+@media (max-width: 675px) {
+  .logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+    height: 26px;
+    margin-top: 1px;
+  }
+}
