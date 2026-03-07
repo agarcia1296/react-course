@@ -1,0 +1,99 @@
+.account-menu {
+  position: absolute;
+  top: 32px;
+  right: 0;
+
+  background: white;
+  color: black;
+
+  border: 1px solid #ddd;
+  border-radius: 6px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  z-index: 1001;
+  width: 400px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 12px;
+}
+
+.account-header a {
+  color: #1a5cff;
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+}
+
+.account-menu a:link,
+.account-menu a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.account-menu li a {
+  display: block;
+}
+
+.account-menu a.active {
+  text-decoration: none;
+}
+
+.account-menu a:hover {
+  text-decoration: underline;
+}
+
+/* LAYOUT */
+
+.account-content {
+  display: flex;
+}
+
+.account-column {
+  flex: 1;
+}
+
+/* DIVIDER */
+
+.account-divider {
+  width: 1px;
+  background: #ddd;
+  margin: 0 24px;
+}
+
+/* TITLES */
+
+.account-column h2 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* LINKS */
+
+.account-column ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 8px;
+  margin: 0;
+}
+
+.account-column li {
+  font-size: 12px;
+  padding: 8px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+.account-column li:hover {
+  text-decoration: underline;
+  background: #f5f5f5;
+}
