@@ -12,7 +12,12 @@
   top: 60px;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 40px;
+  z-index: 1001;
+}
+
+.menu-item:hover {
+  color: var(--color-text-secondary);
 }
 
 .navbar .category-button {
@@ -51,4 +56,66 @@
   margin-left: 2px;
   display: flex;
   align-items: left;
+}
+
+.menu-item.active {
+  background: white;
+  color: black;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* dropdown container */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+  background: white;
+  color: black;
+
+  display: flex;
+  gap: 80px;
+
+  padding: 30px 60px;
+
+  border-bottom: 1px solid #ddd;
+
+  z-index: 30;
+}
+
+/* dropdown columns */
+.dropdown-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-column h4 {
+  margin-bottom: 10px;
+}
+
+.dropdown-column a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown-column a:hover {
+  text-decoration: underline;
+}
+
+/* grey overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  z-index: 10;
 }

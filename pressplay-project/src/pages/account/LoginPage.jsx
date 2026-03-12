@@ -10,7 +10,9 @@ export function LoginPage() {
 
   return (
     <>
-      <HomeButton />
+      <div>
+        <HomeButton />
+      </div>
       <div className="auth-page">
         <div className="auth-card">
           <h1>Sign In to PressPlay</h1>
