@@ -15,71 +15,188 @@ export function NavbarMenu() {
 
   return (
     <>
-      {/* Grey page overlay */}
       {activeMenu && <div className="menu-overlay" onClick={closeMenu}></div>}
+
       <div className="navbar">
+        {/* Genre */}
         <div
           className={`menu-item ${activeMenu === "genre" ? "active" : ""}`}
           onClick={() => toggleMenu("genre")}
         >
-          Genre ▾
+          <button className="category-button">
+            Genre
+            <img
+              className="down-arrow"
+              src="/images/icons/down-arrow-orange.png"
+            />
+          </button>
+          {activeMenu === "genre" && (
+            <div className="dropdown-menu">
+              <div className="dropdown-column">
+                <h4>Popular Genres</h4>
+                <a>Rock</a>
+                <a>Hip-Hop</a>
+                <a>Electronic</a>
+                <a>Jazz</a>
+              </div>
+              <div className="dropdown-column">
+                <h4>More Genres</h4>
+                <a>Metal</a>
+                <a>Punk</a>
+                <a>Indie</a>
+                <a>Folk</a>
+              </div>
+            </div>
+          )}
         </div>
-        <div className="category-button">
+
+        {/* Decade */}
+        <div
+          className={`menu-item ${activeMenu === "decade" ? "active" : ""}`}
+          onClick={() => toggleMenu("decade")}
+        >
           <button className="category-button">
             Decade
             <img
               className="down-arrow"
-              src="images/icons/down-arrow-orange.png"
+              src="/images/icons/down-arrow-orange.png"
             />
           </button>
+          {activeMenu === "decade" && (
+            <div className="dropdown-menu">
+              <div className="dropdown-column">
+                <h4>Popular Genres</h4>
+                <a>Rock</a>
+                <a>Hip-Hop</a>
+                <a>Electronic</a>
+                <a>Jazz</a>
+              </div>
+              <div className="dropdown-column">
+                <h4>More Genres</h4>
+                <a>Metal</a>
+                <a>Punk</a>
+                <a>Indie</a>
+                <a>Folk</a>
+              </div>
+            </div>
+          )}
         </div>
-        <div className="category-button">
+
+        {/* Record Label */}
+        <div
+          className={`menu-item ${activeMenu === "label" ? "active" : ""}`}
+          onClick={() => toggleMenu("label")}
+        >
           <button className="category-button">
             Record Label
             <img
               className="down-arrow"
-              src="images/icons/down-arrow-orange.png"
+              src="/images/icons/down-arrow-orange.png"
             />
           </button>
+          {activeMenu === "label" && (
+            <div className="dropdown-menu">
+              <div className="dropdown-column">
+                <h4>Popular Genres</h4>
+                <a>Rock</a>
+                <a>Hip-Hop</a>
+                <a>Electronic</a>
+                <a>Jazz</a>
+              </div>
+
+              <div className="dropdown-column">
+                <h4>More Genres</h4>
+                <a>Metal</a>
+                <a>Punk</a>
+                <a>Indie</a>
+                <a>Folk</a>
+              </div>
+              <div className="dropdown-column">
+                <h4>More Genres</h4>
+                <a>Metal</a>
+                <a>Punk</a>
+                <a>Indie</a>
+                <a>Folk</a>
+              </div>
+            </div>
+          )}
         </div>
-        <div className="category-button">
+
+        {/* Best Sellers */}
+        <div
+          className={`menu-item right-align ${
+            activeMenu === "best" ? "active" : ""
+          }`}
+          onClick={() => toggleMenu("best")}
+        >
           <button className="category-button">
             Best Sellers
             <img
               className="down-arrow"
-              src="images/icons/down-arrow-orange.png"
+              src="/images/icons/down-arrow-orange.png"
             />
           </button>
+          {activeMenu === "best" && (
+            <div className="dropdown-menu">
+              <div className="dropdown-column">
+                <h4>Popular Genres</h4>
+                <a>Rock</a>
+                <a>Hip-Hop</a>
+                <a>Electronic</a>
+                <a>Jazz</a>
+              </div>
+              <div className="dropdown-column">
+                <h4>More Genres</h4>
+                <a>Metal</a>
+                <a>Punk</a>
+                <a>Indie</a>
+                <a>Folk</a>
+              </div>
+              <div className="dropdown-column">
+                <h4>More Genres</h4>
+                <a>Metal</a>
+                <a>Punk</a>
+                <a>Indie</a>
+                <a>Folk</a>
+              </div>
+            </div>
+          )}
         </div>
-        <div className="category-button">
+
+        {/* Merch */}
+        <div
+          className={`menu-item right-align ${
+            activeMenu === "merch" ? "active" : ""
+          }`}
+          onClick={() => toggleMenu("merch")}
+        >
           <button className="category-button">
             Merch
             <img
               className="down-arrow"
-              src="images/icons/down-arrow-orange.png"
+              src="/images/icons/down-arrow-orange.png"
             />
           </button>
+          {activeMenu === "merch" && (
+            <div className="dropdown-menu">
+              <div className="dropdown-column">
+                <h4>Popular Genres</h4>
+                <a>Rock</a>
+                <a>Hip-Hop</a>
+                <a>Electronic</a>
+                <a>Jazz</a>
+              </div>
+              <div className="dropdown-column">
+                <h4>More Genres</h4>
+                <a>Metal</a>
+                <a>Punk</a>
+                <a>Indie</a>
+                <a>Folk</a>
+              </div>
+            </div>
+          )}
         </div>
       </div>
-      {activeMenu === "genre" && (
-        <div className="dropdown-menu">
-          <div className="dropdown-column">
-            <h4>Popular Genres</h4>
-            <a>Rock</a>
-            <a>Hip-Hop</a>
-            <a>Electronic</a>
-            <a>Jazz</a>
-          </div>
-
-          <div className="dropdown-column">
-            <h4>More Genres</h4>
-            <a>Metal</a>
-            <a>Punk</a>
-            <a>Indie</a>
-            <a>Folk</a>
-          </div>
-        </div>
-      )}
     </>
   );
 }
