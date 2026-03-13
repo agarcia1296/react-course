@@ -20,7 +20,9 @@ export function NavbarMenu() {
       <div className="navbar">
         {/* Genre */}
         <div
-          className={`menu-item ${activeMenu === "genre" ? "active" : ""}`}
+          className={`menu-item left-align ${
+            activeMenu === "genre" ? "active" : ""
+          }`}
           onClick={() => toggleMenu("genre")}
         >
           <button className="category-button">
@@ -52,7 +54,9 @@ export function NavbarMenu() {
 
         {/* Decade */}
         <div
-          className={`menu-item ${activeMenu === "decade" ? "active" : ""}`}
+          className={`menu-item left-align ${
+            activeMenu === "decade" ? "active" : ""
+          }`}
           onClick={() => toggleMenu("decade")}
         >
           <button className="category-button">
@@ -84,7 +88,9 @@ export function NavbarMenu() {
 
         {/* Record Label */}
         <div
-          className={`menu-item ${activeMenu === "label" ? "active" : ""}`}
+          className={`menu-item left-align ${
+            activeMenu === "label" ? "active" : ""
+          }`}
           onClick={() => toggleMenu("label")}
         >
           <button className="category-button">
@@ -124,7 +130,7 @@ export function NavbarMenu() {
 
         {/* Best Sellers */}
         <div
-          className={`menu-item right-align ${
+          className={`menu-item left-align ${
             activeMenu === "best" ? "active" : ""
           }`}
           onClick={() => toggleMenu("best")}
@@ -165,7 +171,7 @@ export function NavbarMenu() {
 
         {/* Merch */}
         <div
-          className={`menu-item right-align ${
+          className={`menu-item left-align ${
             activeMenu === "merch" ? "active" : ""
           }`}
           onClick={() => toggleMenu("merch")}
