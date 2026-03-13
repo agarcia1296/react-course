@@ -1,0 +1,189 @@
+[
+  {
+    "id": "1",
+    "image": "images/products/gorillaz-the-mountain.jpg",
+    "name": "The Mountain - Gorillaz",
+    "rating": {
+      "stars": 4.5,
+      "count": 87
+    },
+    "priceCents": 3990,
+    "keywords": ["indie pop", "alt-pop", "alternative"]
+  },
+  {
+    "id": "2",
+    "image": "images/products/bruno-mars-the-romantic.jpg",
+    "name": "The Romantic - Bruno Mars",
+    "rating": {
+      "stars": 4,
+      "count": 127
+    },
+    "priceCents": 3095,
+    "keywords": ["funk", "soul", "pop"]
+  },
+  {
+    "id": "3",
+    "image": "images/products/harry-styles-kiss-all-the-time-disco-ocasionally.jpg",
+    "name": "Kiss All The Time. Disco, Occasionally. - Harry Styles",
+    "rating": {
+      "stars": 2.5,
+      "count": 56
+    },
+    "priceCents": 1799,
+    "keywords": ["pop", "dance-pop"]
+  },
+  {
+    "id": "4",
+    "image": "images/products/bad-bunny-dtmf.jpg",
+    "name": "DeBi TiRaR MaS FOTos - Bad Bunny",
+    "rating": {
+      "stars": 5,
+      "count": 2197
+    },
+    "priceCents": 3899,
+    "keywords": ["reggaeton", "latin"]
+  },
+  {
+    "id": "5",
+    "image": "images/products/olivia-dean-the-art-of-loving.jpg",
+    "name": "The Art of Loving - Olivia Dean",
+    "rating": {
+      "stars": 4,
+      "count": 37
+    },
+    "priceCents": 2067,
+    "keywords": ["soul", "pop", "R&B", "jazz"]
+  },
+  {
+    "id": "6",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  },
+  {
+    "id": "7",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  },
+  {
+    "id": "8",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  },
+  {
+    "id": "9",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  },
+  {
+    "id": "10",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  },
+  {
+    "id": "11",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  },
+  {
+    "id": "12",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  },
+  {
+    "id": "13",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  },
+  {
+    "id": "14",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  },
+  {
+    "id": "15",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  },
+  {
+    "id": "16",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  },
+  {
+    "id": "17",
+    "image": "images/products/geese-getting-killed.jpg",
+    "name": "Getting Killed - Geese",
+    "rating": {
+      "stars": 5,
+      "count": 1175
+    },
+    "priceCents": 2499,
+    "keywords": ["indie rock", "post-punk", "alternative"]
+  }
+]

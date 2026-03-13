@@ -1,4 +1,5 @@
 import express from 'express';
+import fs from 'fs';
 import { Product } from '../models/Product.js';
 
 const router = express.Router();
@@ -26,6 +27,19 @@ router.get('/', async (req, res) => {
   }
 
   res.json(products);
+});
+
+router.get('/new-releases', async (req, res) => {
+  try {
+
+    const data = fs.readFileSync('./backend/newReleases.json');
+    const newReleases = JSON.parse(data);
+
+    res.json(newReleases);
+
+  } catch (err) {
+    res.status(500).json({ error: 'Could not load new releases' });
+  }
 });
 
 export default router;
