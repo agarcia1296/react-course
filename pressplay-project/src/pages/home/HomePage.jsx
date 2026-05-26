@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { Header } from "../../components/Header";
 import { NavbarMenu } from "../../components/NavbarMenu";
 import { NewsSection } from "./NewsSection";
-import { ProductsGrid } from "./ProductsGrid";
 import { NewReleasesSection } from "./NewReleasesSection";
 import { HelpfulLinks } from "../../components/HelpfulLinks";
 import "./HomePage.css";

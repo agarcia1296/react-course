@@ -1,34 +1,69 @@
+/* =========================
+   Auth Page
+========================= */
+
 .auth-page {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+
+  min-height: 100vh;
+
+  padding: var(--space-xl);
+
+  background: radial-gradient(
+      circle at top right,
+      var(--color-accent-soft),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #101010, var(--color-bg));
+
   font-family: var(--font-sans);
-  background: var(--color-surface);
 }
 
-.auth-page body {
-  background-color: var(--color-surface);
-  margin: 0;
-  padding: 0;
-}
+/* =========================
+   Auth Card
+========================= */
 
 .auth-card {
-  width: 380px;
-  padding: 30px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  background: white;
+  width: 100%;
+  max-width: 420px;
+
+  padding: var(--space-2xl);
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-lg);
+
+  color: var(--color-text-primary);
 }
 
 .auth-card h1 {
-  margin-bottom: 20px;
+  margin: 0 0 var(--space-md);
+
+  font-family: var(--font-serif);
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-heading);
+
+  color: var(--color-text-primary);
 }
 
 .auth-card p {
-  font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: var(--space-lg);
+
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
 }
+
+/* =========================
+   Form Layout
+========================= */
 
 .auth-card form {
   display: flex;
@@ -36,75 +71,342 @@
 }
 
 .auth-card label {
-  margin-top: 10px;
-  margin-bottom: 4px;
-  font-size: 14px;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
 }
+
+/* =========================
+   Inputs
+========================= */
 
 .auth-card input {
-  padding: 8px;
-  margin-top: 4px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 100%;
+
+  padding: 0.9rem 1rem;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-md);
+
+  background: #181818;
+
+  color: var(--color-text-primary);
+
+  font: inherit;
+
+  transition: border-color var(--transition-fast),
+    box-shadow var(--transition-fast), background var(--transition-fast);
 }
 
-.auth-btn {
-  margin-top: 20px;
-  padding: 10px;
-  background: #1a5cff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.auth-card input::placeholder {
+  color: var(--color-text-muted);
 }
 
+.auth-card input:focus {
+  outline: none;
+
+  border-color: var(--color-accent);
+
+  background: #1d1d1d;
+
+  box-shadow: 0 0 0 3px rgba(217, 108, 44, 0.2);
+}
+
+/* =========================
+   Primary Buttons
+========================= */
+
+.auth-btn,
 .primary-btn {
-  margin-top: 20px;
-  padding: 10px;
-  background: #1a5cff;
-  color: white;
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  margin-top: var(--space-xl);
+
+  padding: 0.95rem 1.25rem;
+
   border: none;
-  border-radius: 4px;
+
+  border-radius: var(--radius-md);
+
+  background: var(--color-accent);
+
+  color: white;
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+
   cursor: pointer;
+
+  transition: transform var(--transition-fast),
+    background var(--transition-fast), box-shadow var(--transition-fast),
+    opacity var(--transition-fast);
+
+  box-shadow: 0 10px 24px rgba(217, 108, 44, 0.22);
 }
 
+.auth-btn:hover,
 .primary-btn:hover {
-  background: #0f46cc;
+  background: var(--color-accent-hover);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 16px 28px rgba(217, 108, 44, 0.3);
 }
+
+.auth-btn:active,
+.primary-btn:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   Auth Links
+========================= */
 
 .auth-links {
-  margin-top: 18px;
+  margin-top: var(--space-lg);
+
   text-align: center;
 }
 
 .auth-links a {
+  color: var(--color-accent);
+
   text-decoration: none;
-  color: #1a5cff;
+
+  font-size: var(--font-size-sm);
+
+  transition: color var(--transition-fast), opacity var(--transition-fast);
 }
 
 .auth-links a:hover {
-  text-decoration: underline;
+  color: var(--color-accent-hover);
 }
 
-.auth-btn:hover {
-  background: #0f46cc;
-}
+/* =========================
+   Create Account Section
+========================= */
 
 .create-account {
-  margin-top: 20px;
+  margin-top: var(--space-xl);
+
+  padding-top: var(--space-lg);
+
+  border-top: 1px solid var(--color-border);
+
   text-align: center;
 }
 
+.create-account p {
+  margin-bottom: var(--space-sm);
+}
+
+/* =========================
+   Secondary Button
+========================= */
+
 .create-btn {
-  margin-top: 8px;
-  padding: 8px 14px;
-  border: 1px solid #1a5cff;
-  background: white;
-  color: #1a5cff;
-  border-radius: 4px;
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: var(--space-sm);
+
+  padding: 0.8rem 1.25rem;
+
+  border: 1px solid var(--color-border-light);
+
+  border-radius: var(--radius-md);
+
+  background: transparent;
+
+  color: var(--color-text-primary);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+
   cursor: pointer;
+
+  transition: background var(--transition-fast),
+    border-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .create-btn:hover {
-  background: #f3f6ff;
+  background: rgba(255, 255, 255, 0.03);
+
+  border-color: var(--color-accent);
+
+  transform: translateY(-1px);
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 480px) {
+  .auth-page {
+    padding: var(--space-md);
+  }
+
+  .auth-card {
+    padding: var(--space-xl);
+  }
+
+  .auth-card h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* =========================
+   Password Input Wrapper
+========================= */
+
+.password-input-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper input {
+  padding-right: 3rem;
+}
+
+/* =========================
+   Password Toggle Button
+========================= */
+
+.password-toggle {
+  position: absolute;
+
+  right: 0.9rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  color: var(--color-text-secondary);
+
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.password-toggle:hover {
+  color: var(--color-accent);
+}
+
+.password-toggle:active {
+  transform: scale(0.95);
+}
+
+/* =========================
+   Larger Signup Card
+========================= */
+
+.auth-card-large {
+  max-width: 520px;
+}
+
+/* =========================
+   Checkbox Rows
+========================= */
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  margin-top: var(--space-lg);
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+
+  margin: 0;
+  flex-shrink: 0;
+
+  accent-color: var(--color-accent);
+}
+
+.checkbox-label {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+
+  cursor: pointer;
+}
+/* =========================
+   Artist Fields Section
+========================= */
+
+.artist-fields {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.artist-fields h2 {
+  margin-bottom: var(--space-sm);
+
+  color: var(--color-text-primary);
+
+  font-size: var(--font-size-xl);
+}
+
+.artist-section-description {
+  margin-bottom: var(--space-lg);
+
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-sm);
+
+  line-height: var(--line-height-body);
+}
+
+/* =========================
+   Textarea
+========================= */
+
+.artist-fields textarea {
+  width: 100%;
+
+  min-height: 120px;
+
+  resize: vertical;
+}
+
+.artist-link-section {
+  margin-top: var(--space-xl);
+}
+
+.artist-link-section h3 {
+  margin-bottom: var(--space-md);
+
+  color: var(--color-text-primary);
+
+  font-size: var(--font-size-md);
 }

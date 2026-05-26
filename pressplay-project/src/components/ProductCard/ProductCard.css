@@ -13,11 +13,14 @@
   height: 240px;
 
   transition: box-shadow 0.15s ease;
+
+  z-index: var(--z-content);
 }
 
 /* hover effect */
 .product-card:hover {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  z-index: var(--z-content);
 }
 
 /* remove visited link color change */

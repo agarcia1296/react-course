@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./NavbarMenu.css";
+import "./ProductPage.css";
+import "../pages/home/HomePage.css";
 
 export function NavbarMenu() {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -129,7 +130,7 @@ export function NavbarMenu() {
 
         {/* Best Sellers */}
         <div
-          className={`menu-item right-align ${
+          className={`menu-item left-align ${
             activeMenu === "best" ? "active" : ""
           }`}
           onClick={() => toggleMenu("best")}
@@ -170,7 +171,7 @@ export function NavbarMenu() {
 
         {/* Merch */}
         <div
-          className={`menu-item right-align ${
+          className={`menu-item left-align ${
             activeMenu === "merch" ? "active" : ""
           }`}
           onClick={() => toggleMenu("merch")}
