@@ -1,12 +1,121 @@
+/* =========================
+   Theme Variables
+========================= */
+
 :root {
-  /* Colors */
+  /* =========================
+     Colors
+  ========================= */
+
   --color-bg: #121212;
   --color-surface: #1e1e1e;
+  --color-surface-light: #262626;
+
   --color-text-primary: #f5f1e8;
   --color-text-secondary: #b3b3b3;
-  --color-accent: #d96c2c;
+  --color-text-muted: #8a8a8a;
 
-  /* Fonts */
+  --color-accent: #d96c2c;
+  --color-accent-hover: #f07d38;
+  --color-accent-soft: rgba(217, 108, 44, 0.15);
+
+  --color-border: #2e2e2e;
+  --color-border-light: #3a3a3a;
+
+  --color-success: #4caf50;
+  --color-warning: #f5b942;
+  --color-error: #e5484d;
+
+  /* =========================
+     Typography
+  ========================= */
+
   --font-sans: "Inter", system-ui, sans-serif;
   --font-serif: "Merriweather", serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 3rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --line-height-body: 1.7;
+  --line-height-heading: 1.2;
+
+  /* =========================
+     Spacing Scale
+  ========================= */
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* =========================
+     Border Radius
+  ========================= */
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* =========================
+     Shadows
+  ========================= */
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+  /* =========================
+     Transitions
+  ========================= */
+
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.4s ease;
+
+  /* =========================
+     Layout
+  ========================= */
+
+  --header-height: 60px;
+  --navbar-height: 40px;
+  --product-filter-height: 50px;
+
+  --content-width: 1200px;
+
+  /* =========================
+     Z-Index Layers
+  ========================= */
+
+  --z-base: 0;
+  --z-content: 1;
+
+  --z-navbar: 100;
+  --z-dropdown: 200;
+
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  --z-tooltip: 1000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
