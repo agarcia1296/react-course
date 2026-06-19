@@ -40,7 +40,7 @@ export function Header({ cart }) {
 
         <div className="right-section">
           <NavLink className="login-link header-link" to="/login">
-            <span className="login-text">Login</span>
+            <span className="login-text">Login/Sign up</span>
           </NavLink>
 
           <div

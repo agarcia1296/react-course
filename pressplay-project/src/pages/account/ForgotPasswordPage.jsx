@@ -10,7 +10,6 @@ export function ForgotPasswordPage() {
 
   return (
     <>
-      <HomeButton />
       <div className="auth-page">
         <div className="auth-card">
           <h1>Forgot Password</h1>

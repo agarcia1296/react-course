@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router";
 import { HomeButton } from "../../utils/HomeButton";
+import bcrypt from "bcrypt";
 import "./Auth.css";
 
 export function SignupPage() {
@@ -14,8 +15,6 @@ export function SignupPage() {
 
   return (
     <>
-      <HomeButton />
-
       <div className="auth-page">
         <div className="auth-card auth-card-large">
           <h1>Create Account</h1>
@@ -142,3 +141,31 @@ export function SignupPage() {
     </>
   );
 }
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  const hashedPassword = await bcrypt.hash(password, 10);
+  const response = await fetch("/api/auth/signup", {
+    method: "POST",
+
+    headers: {
+      "Content-Type": "application/json",
+    },
+
+    body: JSON.stringify({
+      email,
+      hashedPassword,
+
+      artistAccount: isArtistAccount,
+
+      artistName,
+      genre,
+    }),
+  });
+
+  const data = await response.json();
+
+  console.log(data);
+
+  navigate("/verify-email");
+};

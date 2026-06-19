@@ -16,8 +16,11 @@
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.21.2",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.2",
+    "lucide-react": "^1.16.0",
     "mysql2": "^3.14.1",
+    "nodemailer": "^8.0.8",
     "patch-package": "^8.0.1",
     "pg": "^8.16.0",
     "sequelize": "^6.6.5",

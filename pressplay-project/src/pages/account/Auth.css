@@ -11,12 +11,13 @@
 
   padding: var(--space-xl);
 
-  background: radial-gradient(
+  /* background: radial-gradient(
       circle at top right,
       var(--color-accent-soft),
       transparent 30%
     ),
-    linear-gradient(180deg, #101010, var(--color-bg));
+    linear-gradient(180deg, #101010, var(--color-bg)); */
+  background: white;
 
   font-family: var(--font-sans);
 }
